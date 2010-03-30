@@ -61,6 +61,11 @@ module SlideShare
       options[:detailed] = detailed unless detailed.nil?
       base.send :get, "/get_slideshow", options.merge(:slideshow_id => id)
     end
+
+   # with slideshare URL
+    def find_slideshare_url(slideshare_url, options = {})
+	 base.send :get, "/get_slideshow", options.merge(:slideshow_url => slideshare_url)
+    end
     
     # Returns true if successful or raises an appropriate exception if not.
     # Takes the following options:
