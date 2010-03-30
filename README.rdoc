@@ -11,3 +11,13 @@ You will need to install HTTParty[http://github.com/jnunemaker/httparty/tree/mas
 This gem is still in its infancy.
 
 copyright (c) 2009 Saiku Desarrollos S.L., released under the MIT license
+
+=Usage (controoler code)
+--apikey
+
+  @slideshare = SlideShare::Base.new(:api_key => "", :shared_secret => "")
+--Retrieving Slidshare by passing slideshare URL(public, private)
+  @slideshow = @slideshare.slideshows.find_slideshare_url("Psate slidshare URL here")
+
+=Dispaly(rhtml code)
+ <%=@slideshow["Slideshow"]["Embed"]%>
