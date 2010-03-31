@@ -19,5 +19,5 @@ copyright (c) 2009 Saiku Desarrollos S.L., released under the MIT license
 --Retrieving Slidshare by passing slideshare URL(public, private)
   @slideshow = @slideshare.slideshows.find_slideshare_url("Psate slidshare URL here")
 
-=Dispaly(rhtml code)
+=Display(rhtml code)
  <%=@slideshow["Slideshow"]["Embed"]%>
